@@ -3,7 +3,7 @@ use anchor_lang::prelude::*;
 declare_id!("7LZB31fr9UwHYzQ3wrYToUxNn6SqmmAzsEMfuBCfUh9z");
 
 #[program]
-mod mysolanaapp {
+mod mysolapp {
     use super::*;
 
     pub fn create(ctx: Context<Create>) -> ProgramResult {

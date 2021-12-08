@@ -2,11 +2,11 @@ const assert = require("assert");
 const anchor = require("@project-serum/anchor");
 const { SystemProgram } = anchor.web3;
 
-describe("mysolanaapp", () => {
+describe("mysolapp", () => {
   /* create and set a Provider */
   const provider = anchor.Provider.env();
   anchor.setProvider(provider);
-  const program = anchor.workspace.Mysolanaapp;
+  const program = anchor.workspace.Mysolapp;
   it("Creates a counter)", async () => {
     /* Call the create function via RPC */
     const baseAccount = anchor.web3.Keypair.generate();
